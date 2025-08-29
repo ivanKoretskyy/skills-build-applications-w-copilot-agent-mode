@@ -1,0 +1,126 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  color: #2a2a72;
+}
+
+.octofit-logo {
+  height: 60px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: linear-gradient(90deg, #2a2a72 0%, #009ffd 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link, .navbar a, .nav-link, a {
+  color: #009ffd !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.App-link:hover, .navbar a:hover, .nav-link:hover, a:hover {
+  color: #2a2a72 !important;
+}
+
+/* Bootstrap overrides */
+.navbar {
+  background: linear-gradient(90deg, #2a2a72 0%, #009ffd 100%) !important;
+  box-shadow: 0 2px 8px rgba(42,42,114,0.08);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #fff !important;
+  background: #009ffd;
+  border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2a2a72;
+  font-weight: 700;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+  background: linear-gradient(90deg, #009ffd 0%, #2a2a72 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,159,253,0.08);
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #2a2a72 0%, #009ffd 100%);
+  color: #fff;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(42,42,114,0.06);
+}
+.table thead {
+  background: linear-gradient(90deg, #009ffd 0%, #2a2a72 100%);
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0eafc;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #cfdef3;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Favicon style (for demonstration, actual favicon is set in public/index.html) */
+.favicon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
